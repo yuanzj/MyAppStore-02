@@ -16,7 +16,7 @@
 下面举个例子说明一下：
 将圆形的添加按钮变换成方形的添加布局背景
 
-![圆形变换成方形](Doc/Pasted image 20220314142847.png)
+![圆形变换成方形](Doc/"Pasted image 20220314142847.png")
 
 ```swift
 @Namespace private var namespace
@@ -61,7 +61,7 @@ var body: some View {
 ### matchedGeometryEffect
 #### 参数
 我们再来实现一个相对复杂的效果
-![相对复杂的效果](Doc/Pasted image 20220314154503.png)
+![相对复杂的效果](Doc/"Pasted image 20220314154503.png")
 图片和文字会从界面1飞入界面2中
 
 当前我们显示界面2时没有隐藏界面1时控制台打印出
