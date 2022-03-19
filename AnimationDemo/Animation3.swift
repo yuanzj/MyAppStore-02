@@ -19,7 +19,7 @@ struct Animation3: View {
             
             ScrollView(.vertical) {
                 
-                LazyVStack {
+                VStack {
                     if show {
                         ForEach(0 ..< 100) { index in
                             Rectangle()
@@ -30,7 +30,7 @@ struct Animation3: View {
                                 .background(Color.clear)
                                 .padding()
                         }
-                        
+
                     } else {
                         ForEach(0 ..< 100) { index in
                             
@@ -43,7 +43,7 @@ struct Animation3: View {
                                     .matchedGeometryEffect(id: "Image\(index)", in: namespace, anchor: .center,  isSource: true)
                                 
                                 Text("测试\(index)")
-                                    .matchedGeometryEffect(id: "Text\(index)", in: namespace, isSource: true)
+                                    .matchedGeometryEffect(id: "Text\(index)", in: namespace, isSource:  true)
                             }
                             .frame(maxWidth: .infinity, alignment: .topLeading)
                             .frame(height: 50)
@@ -88,7 +88,7 @@ struct ModalView: View {
                     .aspectRatio(contentMode: .fill)
                     .clipShape(Circle())
                     .frame(width: 50 , height: 50, alignment: .center)
-//                    .scaleEffect(2)
+                    .scaleEffect(2)
                     .matchedGeometryEffect(id: "Image\(index)", in: namespace, anchor: .center,  isSource: true)
                 
                 
@@ -118,8 +118,8 @@ struct ModalView: View {
     }
 }
 
-//struct Animation3_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Animation3()
-//    }
-//}
+struct Animation3_Previews: PreviewProvider {
+    static var previews: some View {
+        Animation3()
+    }
+}
